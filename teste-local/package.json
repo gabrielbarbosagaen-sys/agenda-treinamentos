@@ -1,0 +1,11 @@
+{
+  "name": "teste-local-agendamento",
+  "private": true,
+  "description": "Servidor de teste local que imita o Supabase (somente para testes)",
+  "scripts": {
+    "start": "node servidor.js"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.2.17"
+  }
+}

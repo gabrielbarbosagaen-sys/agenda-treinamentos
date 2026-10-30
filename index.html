@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Agenda de Treinamentos</title>
+  <meta name="theme-color" content="#4353e8">
+  <script>try { const t = localStorage.getItem('tema'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script type="module" src="js/public.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="marca" href="./" data-marca></a>
+      <button type="button" class="btn-icone empurra" data-tema></button>
+    </div>
+  </header>
+  <div id="app">
+    <section class="hero"><div class="hero-inner">
+      <div class="esqueleto" style="width:140px;height:14px;margin-bottom:16px"></div>
+      <div class="esqueleto" style="width:70%;height:38px;margin-bottom:14px"></div>
+      <div class="esqueleto" style="width:50%;height:16px"></div>
+    </div></section>
+    <main class="conteudo">
+      <div class="esqueleto" style="height:64px;border-radius:14px;margin-bottom:16px"></div>
+      <div class="esqueleto" style="height:220px;border-radius:20px"></div>
+    </main>
+  </div>
+  <footer class="rodape"><span data-empresa></span> · Agenda de treinamentos</footer>
+</body>
+</html>
