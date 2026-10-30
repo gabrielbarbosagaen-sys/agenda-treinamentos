@@ -9,6 +9,6 @@ window.APP_CONFIG = {
   // Identidade
   EMPRESA: 'Escritório de Projetos',
   SUBTITULO: 'Agenda de treinamentos',
-  LOGO_URL: '',            // opcional: endereço de uma imagem (ex.: 'img/logo.png'). Vazio = usa as iniciais
+  LOGO_URL: 'img/logo.svg', // imagem do logo. Vazio ('') = usa as iniciais do nome
   COR_PRIMARIA: '#4353e8', // cor principal; o restante da paleta é gerado a partir dela
 };

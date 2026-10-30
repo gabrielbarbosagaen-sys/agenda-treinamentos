@@ -9,7 +9,10 @@ const { setup } = require('./prelude');
 const ROOT = path.resolve(__dirname, '..');
 const PORT = 5599;
 const ADMIN = 'admin@teste.com';
-const MIME = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json' };
+const MIME = {
+  '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json',
+  '.svg': 'image/svg+xml', '.png': 'image/png', '.webmanifest': 'application/manifest+json',
+};
 
 const b64 = o => Buffer.from(JSON.stringify(o)).toString('base64url');
 const jwt = email => `${b64({ alg: 'HS256', typ: 'JWT' })}.${b64({ sub: 'u1', email, role: 'authenticated', exp: Math.floor(Date.now() / 1000) + 36000 })}.sig`;

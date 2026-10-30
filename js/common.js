@@ -75,7 +75,7 @@ export const pessoaHtml = (nome, sub = '') => `<div class="pessoa">${avatar(nome
 
 export function marcaHtml() {
   const logo = cfg.LOGO_URL ? `<img src="${esc(cfg.LOGO_URL)}" alt="">` : esc(iniciais(cfg.EMPRESA));
-  return `<span class="marca-logo">${logo}</span>
+  return `<span class="marca-logo ${cfg.LOGO_URL ? 'com-imagem' : ''}">${logo}</span>
     <span style="min-width:0"><span class="marca-nome">${esc(cfg.EMPRESA)}</span><br><span class="marca-sub">${esc(cfg.SUBTITULO || '')}</span></span>`;
 }
 
